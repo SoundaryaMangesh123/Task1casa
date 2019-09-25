@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My webpage!</title>
+<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+	<link rel="stylesheet" type="text/css" href="./tabletype.css" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="./tablejs.js"></script>
+	<!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"> --></head>
+    
+
+  
+  <body>
+  <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Car ID</th>
+                <th>Owner</th>
+                <th>Car name</th>
+				<th>Car year</th>
+                
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Car ID</th>
+                <th>Owner</th>
+                <th>Car name</th>
+				<th>Car year</th>
+                
+            </tr>
+        </tfoot>
+    </table>
+	<button type="button" id="addRow">Add row</button>
+	<br>
+	<label>enter owner name name<input type="enter third" id="myText">
+	<br>
+	<label>enter car name<input type="enter third" id="myText1">
+	<br>
+	
+	<label>enter car year<input type="enter year" id="myText2">
+	<br>
+	
+ <table id="example1" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>First Naame</th>
+                <th>Last name</th>
+				
+                
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>User ID</th>
+                <th>First Naame</th>
+                <th>Last name</th>
+				
+                
+            </tr>
+        </tfoot>
+    </table>
+	<br>
+	<label>enter user first name<input type="enter third" id="myText11">
+	<br>
+	<label>enter last name<input type="enter third" id="myText12">
+	
+  </body>
+<!--  <script>
+  
+  
+  $(document).ready(function() {
+    var t = $('#example').DataTable();
+	var t1 = $('#example1').DataTable();
+    var counter = 1;
+    
+    $('#addRow').on( 'click', function () {
+	var x = document.getElementById("myText").value;
+	var y = document.getElementById("myText1").value;
+	var z = document.getElementById("myText2").value;
+	var x1 = document.getElementById("myText11").value;
+	var y1 = document.getElementById("myText12").value;
+	
+        t.row.add( [
+            counter +'.1',
+            x,
+			y,
+			z,
+            "hello",
+            counter +'.4',
+            counter +'.5'
+        ] ).draw( false );
+		t1.row.add( [
+            counter +'.1',
+            x1,
+			y1,
+			z,
+            "hello",
+            counter +'.4',
+            counter +'.5'
+        ] ).draw( false );
+ 
+        counter++;
+    } );
+ 
+    // Automatically add a first row of data
+    $('#addRow').click();
+} );
+  </script> -->
+</html>
